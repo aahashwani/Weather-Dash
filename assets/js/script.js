@@ -1,5 +1,4 @@
-// var apiKey = "a4b7d9be4b78280c3470b24571062252"
-var apiKey = "7d1b285353ccacd5326159e04cfab063"
+var apiKey = "f094b3d4247e89d90ebcf38a7e5d3caa"
 function addWeather(){
 
     inputCity = document.getElementById("userInput").value;  
@@ -24,9 +23,6 @@ $(".record").on('click', function(e){
      document.getElementById("userInput").value =  e.target.id;
     getWeather(); 
 });
-
-document.getElementById("searchBtn").addEventListener("click", addWeather);
-document.getElementById("searchBtn").addEventListener('click', getWeather);
 
 function getWeather(){   
 
@@ -123,7 +119,6 @@ function getWeather(){
                 weatherBoxInfo.append((this["futureTemp"+i]));
                 weatherBoxInfo.append((this["futureWind"+i]));
                 weatherBoxInfo.append((this["futureHumidity"+i]));
-
                 weatherBoxInfo.addClass("weather-card")
             }
 
@@ -163,5 +158,8 @@ function renderWeatherInfo () {
         $(".record").append(searchCity)
     }
 };
+
+document.getElementById("searchBtn").addEventListener("click", addWeather);
+document.getElementById("searchBtn").addEventListener('click', getWeather);
 
 renderWeatherInfo();

@@ -1,0 +1,210 @@
+:root {
+    --primary: #b5ccdf;
+    --border-radius: 0.3rem;
+}
+  
+* {
+    box-sizing: border-box;
+}
+
+header{
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div {
+    text-transform: Uppercase;
+}
+  
+body {
+    font-family: 'DynaPuff';
+    background-image: url("https://images.unsplash.com/photo-1461301214746-1e109215d6d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+    
+}
+#userInput{
+    font-size: 3rem;
+    background-color: rgba(132, 182, 239, 0.423);
+    color: white
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.649);
+}
+  
+h1, h2, h4, h5, h6 {
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.25;
+    text-transform: Uppercase;
+    font-size: 2.5rem;
+    background-color: rgba(175, 182, 190, 0.423);
+    font-family: 'DynaPuff';
+    background: -webkit-linear-gradient(navy, orange, lightblue, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+  
+main {
+    margin-left: 40px auto;
+    width: 94%;
+    min-height:100%;
+    overflow: auto;
+    
+}
+
+.btn {
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: rgba(64, 125, 195, 0.276);
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+}
+  
+.btn:hover {
+    color: var(--primary);
+    background-color: rgba(175, 182, 190, 0.423);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+    
+}
+  
+.btn-inline {
+    display: inline;
+}
+  
+.btn-back {
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: rgba(175, 182, 190, 0.423);
+    box-shadow: 3px 3px var(--secondary);
+    transform: translate(-1px, -1px);
+    display: inline-block;
+    width: auto;
+    margin-top: 20px;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+}
+  
+.btn-back:hover {
+    color: var(--primary);
+    background-color: rgba(175, 182, 190, 0.423);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+    
+}
+  
+.hero {
+    padding: 3% 4%;
+    color: var(--primary);
+}
+  
+
+.app-title {
+    font-family: 'DynaPuff';
+    background: -webkit-linear-gradient(lightblue, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5rem;
+    background-color: rgba(175, 182, 190, 0.423);
+    color: rgba(231, 237, 255, 0.534);
+    padding: 0 10px;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    box-shadow: 6px 5px var(--light-dark);
+    
+}
+  
+.list-group {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(175, 182, 190, 0.423);
+
+}
+  
+.list-item:hover {
+    background-color: rgba(175, 182, 190, 0.423);
+    
+}
+  
+.icon {
+    width:10%;
+    height:10%;
+}
+
+.card {
+    margin: 0 0 20px 0;
+    border: 3px solid var(--dark);
+    border-radius: var(--border-radius);
+    background-color: rgba(175, 182, 190, 0.423);
+    color: white;
+
+}
+  
+.card-header {
+    color: var(--primary);
+    background-color: rgba(175, 182, 190, 0.423);
+    padding: 2.5%;
+    border-radius: calc(0.18rem - 1px) calc(0.18rem - 1px) 0 0;
+    
+}
+
+.weather-card {
+    margin-bottom: 10px;
+    padding: 1.5%;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    margin-right: 10px;
+    height: 300px;
+    line-height: 1.8;
+    background-color: rgba(175, 182, 190, 0.423);
+
+}
+
+.five-day-forecast {
+    display:flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(175, 182, 190, 0.423);
+
+}
+
+.subText {
+    display:none;
+    background-color: rgba(175, 182, 190, 0.423);
+
+    
+}

@@ -40,7 +40,7 @@ function getWeather(){
     let theLon;   
     let theLat;
         
-    let cityName =$("<h>")    
+    let cityName =$("<p>")    
     cityName.addClass("h3")  
     let temp = $("<div>")    
     let wind = $("<div>")    
@@ -100,7 +100,7 @@ function getWeather(){
             for (let i=1; i<6; i++){
 
                 let weatherBoxInfo = $("<div>")
-                this["futureDate"+i] = $("<h>")
+                this["futureDate"+i] = $("<p>")
                 this["futureIcon"+i] = $("<img>")
                 this["futureTemp"+i] = $("<div>")
                 this["futureWind"+i] = $("<div>")

@@ -33,11 +33,7 @@ body {
     font-size: 16px;
     
 }
-#userInput{
-    font-size: 3rem;
-    background-color: rgba(132, 182, 239, 0.423);
-    color: white
-}
+
 ::placeholder{
     color: rgba(255, 255, 255, 0.649);
 }
@@ -215,5 +211,10 @@ main {
     display:none;
     background-color: rgba(175, 182, 190, 0.423);
 
-    
+}
+
+#userInput{
+    font-size: 3rem;
+    background-color: rgba(132, 182, 239, 0.423);
+    color: white
 }
